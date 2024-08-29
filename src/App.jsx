@@ -8,11 +8,12 @@ import Remarks from './components/Remarks'
 function App() {
  const [bookmarks, setBookmarks]=useState([])
  const [readTime, setReadTime]=useState(0)
+ 
 
  const handleBookmark= (post)=>{
 
   const newBookmark=[...bookmarks, post];
-  setBookmarks(newBookmark);
+   setBookmarks(newBookmark);
  }
  const handleReadingTime=(post)=>{
   const newReadTime=readTime+post.reading_time;
